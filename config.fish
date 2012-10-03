@@ -1,5 +1,13 @@
 set fish_greeting 'Type "help" for instructions on how to use fish'
 
+set -g PATH /usr/local/bin $PATH
+set -g PATH $PATH /opt/local/bin 
+set -g PATH $PATH /Library/PostgreSQL/9.1/bin 
+set -g PATH $PATH /Users/shamail/install/bin
+set -g PATH $PATH /Users/shamail/bin
+set -g PATH $PATH /opt/local/bin
+set -g PATH $PATH /opt/local/sbin
+
 function fish_prompt
     echo -n "[$USER@"
     echo -n (hostname -s)
