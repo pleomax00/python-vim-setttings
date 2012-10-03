@@ -106,6 +106,7 @@ augroup END
 au BufReadPost *.zcml set syntax=xml
 au BufReadPost *.pt set syntax=html
 au BufReadPost *.rst set syntax=rest
+au BufReadPost *.fish set syntax=fish
 
 " Some aliases
 abbr pl. #! /usr/bin/env perl
