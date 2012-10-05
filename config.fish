@@ -1,6 +1,7 @@
 set fish_greeting 'Type "help" for instructions on how to use fish'
 
 set -g PATH /usr/local/bin $PATH
+set -g PATH /Users/shamail//baseinstall/python/bin/ $PATH
 set -g PATH $PATH /opt/local/bin 
 set -g PATH $PATH /Library/PostgreSQL/9.1/bin 
 set -g PATH $PATH /Users/shamail/install/bin
