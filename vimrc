@@ -17,6 +17,7 @@ set backupdir=/tmp              " Our .swp files should go in /tmp (not poweroff
 set tabstop=4                   " Tabstop is 4.
 set ignorecase                  " Case insensitive search.
 set smartcase                   " Now a case sensitive search only if you enter an uppercase character in the search, e.g Apple.
+filetype plugin indent on
 
 " Set options for vim ctags support.
 " Ctrl + ] will jump to definition in a horizontal split pane.
