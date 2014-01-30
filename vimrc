@@ -43,6 +43,7 @@ source ~/.vim/plugin/closetag.vim
 if has("gui_running")
    set guifont=Monaco:h15
    set guioptions=egmrt
+   colorscheme koehler
    " Navigate using Meta+Number to move to a tab.
    map <D-1> 1gt
    map <D-2> 2gt
