@@ -1,8 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/Users/shamail/sc/exam/wsgi/offline'
 let g:netrw_dirhist_2='/Users/shamail/sc/exam/wsgi'
 let g:netrw_dirhist_3='/Users/shamail/Baton/batonSites/VerificationManager/lib/python/baton'
 let g:netrw_dirhist_4='/Users/shamail/sc/exam/wsgi'
 let g:netrw_dirhist_5='/Users/shamail/sc/exam'
 let g:netrw_dirhist_6='/Users/shamail/sc/exam/wsgi'
+let g:netrw_dirhist_7='/Users/shamail/Development/Tunesdiary/templates/default'
+let g:netrw_dirhist_8='/Users/shamail/Development/Wigzo/core/management/commands'
