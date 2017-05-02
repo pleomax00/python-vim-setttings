@@ -9,3 +9,5 @@ au BufRead,BufNewFile * call s:DetectScala()
 
 " Install vim-sbt for additional syntax highlighting.
 au BufRead,BufNewFile *.sbt setfiletype sbt.scala
+
+" comment by atyab
