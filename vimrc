@@ -7,7 +7,7 @@
 set nu                          " Show line numbers.
 sy on                           " Syntax Hilighting on
 "set cindent shiftwidth=4       " Set C like indentation with shiftwith of 4.
-set background=light            " We are working with light terminal background.
+set background=dark             " We are working with light terminal background.
 set shiftwidth=4                " Set shift width of 4
 set et                          " Set expand tab to spaces.
 set ai                          " Set auto indent
@@ -39,39 +39,13 @@ set wildignore+=django
 " Close Tag integration, Ctrl+Plus (c-s-=)
 source ~/.vim/plugin/closetag.vim 
 
-" GUI Specific Settings
-if has("gui_running")
-   set guifont=Monaco:h15
-   set guioptions=egmrt
-   colorscheme koehler
-   " Navigate using Meta+Number to move to a tab.
-   map <D-1> 1gt
-   map <D-2> 2gt
-   map <D-3> 3gt
-   map <D-4> 4gt
-   map <D-5> 5gt
-   map <D-6> 6gt
-   map <D-7> 7gt
-   map <D-8> 8gt
-   map <D-9> 9gt
-
-   map! <D-1> <ESC>1gt
-   map! <D-2> <ESC>2gt
-   map! <D-3> <ESC>3gt
-   map! <D-4> <ESC>4gt
-   map! <D-5> <ESC>5gt
-   map! <D-6> <ESC>6gt
-   map! <D-7> <ESC>7gt
-   map! <D-8> <ESC>8gt
-   map! <D-9> <ESC>9gt
-endif
-
 " Tell vim to remember certain things when we exit
 " '10 : marks will be remembered for up to 10 previously edited files
 " "100 : will save up to 100 lines for each register
 " :100 : up to 100 lines of command-line history will be remembered
 " % : saves and restores the buffer list
 " n... : where to save the viminfo files
+
 set viminfo='10,\"100,:20,%,n~/.viminfo
  
 " when we reload, tell vim to restore the cursor to the saved position
@@ -116,3 +90,36 @@ abbr py. #! /usr/bin/env python
 abbr rb. #! /usr/bin/env ruby
 abbr sh. #! /usr/bin/env bash
 
+" GUI Specific Settings
+if has("gui_running")
+   set guifont=Monaco:h15
+   set guioptions=egmrt
+   colorscheme koehler
+   " Navigate using Meta+Number to move to a tab.
+   map <D-1> 1gt
+   map <D-2> 2gt
+   map <D-3> 3gt
+   map <D-4> 4gt
+   map <D-5> 5gt
+   map <D-6> 6gt
+   map <D-7> 7gt
+   map <D-8> 8gt
+   map <D-9> 9gt
+
+   map! <D-1> <ESC>1gt
+   map! <D-2> <ESC>2gt
+   map! <D-3> <ESC>3gt
+   map! <D-4> <ESC>4gt
+   map! <D-5> <ESC>5gt
+   map! <D-6> <ESC>6gt
+   map! <D-7> <ESC>7gt
+   map! <D-8> <ESC>8gt
+   map! <D-9> <ESC>9gt
+endif
+
+if has("macunix")
+  if v:version >= 703
+    " Default yank and paste go to Mac's clipboard
+    set clipboard=unnamed
+  endif
+endif
